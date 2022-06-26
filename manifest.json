@@ -1,13 +1,11 @@
 {
-    "name": "Fishing for Phish",
-    "description": "checks for phishing emails",
-    "version": "1.0",
-    "manifest_version": 2,
-    "permissions": ["storage", "activeTab", "scripting", "contextMenus", "tabs"],
-    "background": {
-        "scripts": ["js/script.js"] 
-    },
-    "browser_action": {
-        "default_icon": "images/fish.svg"
-    }
+  "name": "Fishing for Phish",
+  "description": "checks for phishing emails",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting", "contextMenus", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {}
 }
